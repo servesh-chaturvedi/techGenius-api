@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-block-size: 100vh;
+  background-color: #151515;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn {
+  --clr-bg: blueviolet;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-block: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  border: 2px solid whitesmoke;
+  border-radius: 0.5rem;
+  transition: 250ms ease;
+}
+
+.btn:is(:hover, :focus) {
+  background-color: var(--clr-bg);
+  border-color: var(--clr-bg);
+}
+
+.not-found__wrapper {
+  display: grid;
+  place-content: center;
+  min-block-size: 100vh;
+}
